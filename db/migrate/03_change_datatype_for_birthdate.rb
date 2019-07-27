@@ -4,7 +4,7 @@ class ChangeDatatypeForBirthdate < ActiveRecord::Migration[5.1]
         t.change :price, :string
       end
     end
-   
+
     def down
       change_table :students do |t|
         t.change :price, :integer
